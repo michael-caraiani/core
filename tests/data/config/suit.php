@@ -16,5 +16,7 @@ return [
     'dummy' => [
         'has' => 'something',
     ],
-    'controller' => '\Wtf\Core\Tests\Dummy\\',
+    'controller' => [
+        'namespaces' => '\Wtf\Core\Tests\Dummy\\',
+    ],
 ];
