@@ -16,4 +16,5 @@ return [
     'dummy' => [
         'has' => 'something',
     ],
+    'controller' => '\Wtf\Core\Tests\Dummy\\',
 ];
