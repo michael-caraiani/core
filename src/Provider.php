@@ -91,7 +91,7 @@ class Provider implements ServiceProviderInterface
     {
         return $container->protect(function (string $name) use ($container) {
             $parts = \explode('_', $name);
-            $class = $container['config']('suit.controller.namespaces', '\\App\\Controller\\');
+            $class = $container['config']('suit.namespaces.controller', '\\App\\Controller\\');
             foreach ($parts as $part) {
                 $class .= \ucfirst($part);
             }
